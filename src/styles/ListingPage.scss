@@ -1,0 +1,38 @@
+$calc-width: calc(100% - 350px);
+
+.listingPage {
+  display: flex;
+  .form-wrapper {
+    position: fixed;
+    z-index: 21;
+    padding-top: 71px;
+    min-width: 350px;
+    background: url("../assets/palaceBerlin.jpeg");
+    background-size: cover;
+    background-position-x: center;
+    height: 100vh;
+    box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.3);
+    .form-square {
+      width: 90%;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.65);
+      padding: 10px;
+      h1 {
+        padding: 8px 0;
+      }
+    }
+  }
+  .grid-wrapper {
+    width: $calc-width;
+    padding-top: 51px;
+    margin-left: 350px;
+
+    .grid {
+      max-width: 1080px;
+      margin: 0 auto;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

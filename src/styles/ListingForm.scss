@@ -1,0 +1,25 @@
+$bnb-color: #ff5a5a;
+@mixin btn {
+  padding: 6px;
+  margin: 15px 0;
+  width: 90px;
+  color: white;
+  background: $bnb-color;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+form {
+  .red {
+    color: darkRed;
+  }
+  button {
+    @include btn;
+  }
+}

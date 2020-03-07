@@ -1,0 +1,163 @@
+$blue: #a4bfcb;
+$bnb-color: #ff5a5a;
+
+.card {
+  width: 300px;
+  text-align: left;
+  border-radius: 8px;
+  margin: 20px;
+
+  .panel-wrapper {
+    filter: drop-shadow(3px 0px 3px rgba(0, 0, 0, 0.3));
+    .controlpanel {
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      padding: 0 25px;
+      width: 100px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $blue;
+      color: white;
+      div {
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .imgContainer {
+    border-top-right-radius: 8px;
+    height: 250px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.3);
+  }
+  .default {
+    background: url("../assets/houses.jpeg");
+    background-size: cover;
+  }
+  .mitten {
+    background: url("../assets/neighborhood/mitte.jpeg");
+    background-size: cover;
+  }
+  .krauzberg {
+    background: url("../assets/neighborhood/krauzberg.jpeg");
+    background-size: cover;
+  }
+  .lichtenberg {
+    background: url("../assets/neighborhood/lichtenburg.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .neukoln {
+    background: url("../assets/neighborhood/neukoln.jpeg");
+    background-size: cover;
+  }
+  .pankow {
+    background: url("../assets/neighborhood/pankow.jpeg");
+    background-size: cover;
+  }
+  .spandau {
+    background: url("../assets/neighborhood/spandau.jpeg");
+    background-size: cover;
+    background-position: bottom;
+  }
+  .garden {
+    background: url("../assets/neighborhood/trees.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .zehlen {
+    background: url("../assets/night.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .berlin {
+    background: url("../assets/neighborhood/palace.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .kopenik {
+    background: url("../assets/brandenburg.jpeg");
+    background-size: cover;
+  }
+  .reinick {
+    background: url("../assets/neighborhood/reinick.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .hellers {
+    background: url("../assets/neighborhood/hellers.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .cardHeader {
+    border-bottom: 1px solid black;
+    padding: 8px 8px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.3);
+
+    .hometype {
+      display: flex;
+      align-items: center;
+      h2 {
+        padding-left: 10px;
+      }
+    }
+    h1 {
+      color: rgba(28, 25, 25, 0.73);
+      padding-left: 10px;
+    }
+  }
+  .content {
+    background: $blue;
+    color: white;
+    padding: 10px 8px;
+    // border-bottom-right-radius: 8px;
+    // border-bottom-left-radius: 8px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.3);
+    h2 {
+      font-size: 22px;
+    }
+    .attributes {
+      div {
+        display: flex;
+        align-items: center;
+        svg {
+          min-width: 40px;
+          margin: 8px;
+          color: white;
+        }
+      }
+    }
+  }
+  .arrow {
+    text-align: center;
+    cursor: pointer;
+    svg {
+      &:hover {
+        margin-bottom: -5px;
+        margin-top: 5px;
+      }
+    }
+    .upArrow {
+      margin-bottom: -5px;
+      margin-top: 5px;
+    }
+  }
+  .details {
+    background: $blue;
+    position: relative;
+    z-index: -1;
+    padding: 10px;
+    // margin-top: -6px;
+    color: white;
+    font-size: 18px;
+    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.3);
+    h3 {
+      padding: 4px 0;
+    }
+    p {
+      padding: 3px 0;
+    }
+  }
+}

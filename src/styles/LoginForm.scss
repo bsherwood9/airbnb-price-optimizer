@@ -1,0 +1,98 @@
+@mixin btn {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+  }
+}
+
+.form-card {
+  position: relative;
+  height: 100vh;
+  background: url("../assets/castle.jpeg");
+  background-size: cover;
+  background-position: top;
+  form {
+    border-radius: 8px;
+    min-width: 350px;
+    height: 280px;
+    background: white;
+    padding: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+
+    h1 {
+      padding-bottom: 20px;
+    }
+    label {
+      text-align: left;
+      font-weight: 800;
+      width: 40%;
+    }
+    input {
+      box-shadow: none;
+      margin: 3px 0;
+      height: 35px;
+      border: 1px solid #ebebeb;
+      font-size: 16px;
+      &:focus {
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 2px solid #807a7a;
+        outline: none;
+      }
+    }
+    .btn-div {
+      position: absolute;
+      top: 70%;
+      left: 10%;
+      right: 10%;
+      button {
+        @include btn;
+      }
+      .login {
+        background: #ff5a5a;
+      }
+      .register {
+        background: #91bdd0;
+      }
+    }
+  }
+}
+.regstyle {
+  background: url("../assets/garden.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  form {
+    height: 450px;
+    top: 40%;
+    .btn-div {
+      position: absolute;
+      top: 82%;
+      left: 10%;
+      right: 10%;
+      .login2 {
+        background: #91bdd0;
+      }
+      .submit {
+        background: #ff5a5a;
+      }
+    }
+  }
+}
